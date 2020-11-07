@@ -1,0 +1,259 @@
+.center-text{
+  text-align: center;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  background: linear-gradient(45deg, floralwhite, purple);
+  font-family: "Ubuntu", sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.nav {
+  display: flex;
+  overflow: hidden;
+  width: 97vw;
+  height: 77px;
+  justify-content: space-between;
+  /* background:linear-gradient(45deg,rgb(168, 110, 168), purple); */
+  margin-top: 0px;
+  position: sticky;
+}
+
+.abc {
+  width: 100px;
+  padding: 10px;
+  border-radius: 40%;
+  margin-top: 20px;
+}
+
+.abc:hover {
+  cursor: pointer;
+}
+
+.nav li {
+  list-style: none;
+  width: 128px;
+  height: 100px;
+  margin-top: 20px;
+}
+
+.nav li a {
+  text-decoration: none;
+  font-size: 1.7rem;
+  align-self: center;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav li a:hover {
+  color: black;
+  background: azure;
+  cursor: pointer;
+  /* border-bottom: 1px solid black; */
+  border-radius: 5px;
+  transform: translateX(20px);
+  /* box-shadow: 3px 4px 12px 4px #9C27B0; */
+}
+
+.bt {
+  /* padding: 10px; */
+  width: 142px;
+  height: 57px;
+  transition: all 0.2s;
+  margin-right: 10px;
+  margin-top: 3px;
+}
+
+.bt:hover {
+  cursor: pointer;
+  transform: translateX(-10px);
+}
+
+.front {
+  display: flex;
+  justify-content: space-between;
+  /* background:linear-gradient(45deg, floralwhite, purple); */
+  width: 100%;
+  height: 74vh;
+  overflow: hidden;
+}
+
+.first {
+  background: linear-gradient(45deg, floralwhite, purple);
+  width: 100vw;
+}
+
+.photo {
+  margin-top: 30px;
+  transition: all 0.2s;
+}
+
+.photo:hover {
+  transform: translateX(-10px);
+  transform: scale(1.1);
+}
+
+.photo img {
+  width: 550px;
+}
+
+
+
+.front h1 {
+  font-size: 3.5rem;
+  color: #332baf;
+  animation:starting 0.4s ease-in-out linear forwards;
+  transition: 1s ease-in-out;
+  animation-delay: 3s;
+}
+
+.front p {
+  font-size: 1.5rem;
+  margin-top: -29px;
+  color: black;
+  animation:starting 0.4s ease-in-out linear forwards;
+  transition: 1s ease-in-out;
+  animation-delay: 3s;
+}
+
+.content {
+  margin-left: 59px;
+  margin-top: 165px;
+  
+}
+@keyframes starting{
+  0%{
+    transform: translateX(-450px);
+
+  }
+
+  100%{
+    transform: translateX(-450px);
+  }
+}
+.front-button {
+  transition: all 0.2s ease-in;
+}
+
+.front-button:hover {
+  transform: translate(10px, 2px);
+}
+
+h2,
+h3 {
+  align-self: center;
+}
+
+#second {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  height: 80vh;
+  width: 100%;
+  background: white;
+}
+
+.sec-img img {
+  width: 89%;
+  margin-top: 151px;
+  transition: all 1s ease-in-out;
+}
+.sec-img img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.second-element {
+  background: white;
+  color: black;
+  border-radius: 8%;
+  margin-top: 150px;
+  height: 400px;
+  /* box-shadow: 2px 2px 8px 3px rgb(167, 164, 164); */
+}
+
+.second-element h3 {
+  font-size: 1.5rem;
+  color: #5550a4;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  width: 105px;
+  height: 175px;
+  /* background-color: teal; */
+  margin-top: 150px;
+  margin-right: 30px;
+}
+
+.icons img {
+  width: 75px;
+}
+
+.second-element p {
+  font-size: 1.1rem;
+  line-height: 35px;
+}
+
+.not {
+  margin-top: 105px;
+}
+.dusra {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+.ram {
+  position: relative;
+  top: 74px;
+  font-size: 1.8rem;
+}
+.header1 {
+  position: sticky;
+  top: 0px;
+}
+
+#stats {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(-30deg,#03a9f4 0%,#3a78b7 50%,#262626 50%,#607d8b 100%);
+  color: white;
+  
+}
+#stats h1 {
+  font-size: 3.4rem;
+  font-family: monospace;
+}
+#stats img{
+width: 200px;
+    /* align-self: center; */
+    /* justify-content: center; */
+    margin-left: 17px;
+    margin-top: 5px;
+}
+.stat-heading {
+  display: flex;
+  position: relative;
+  left:527px;
+  
+}
+.stat-heading img{
+  width: 100px !important;
+
+}
+.numbers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.number-in{
+  width:250px;
+  height: 350px;
+box-shadow: 2px 2px 19px 2px #262626;
+border-radius: 15px;
+}
