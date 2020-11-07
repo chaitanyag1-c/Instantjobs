@@ -227,12 +227,12 @@ h3 {
   
 }
 .pehla{
-  color:white;
+  color:white !important;
 }
 #stats h1 {
   font-size: 3.4rem;
   font-family: monospace;
-  color:#000 !important;
+  color:#000 ;
 }
 #stats img{
 width: 200px;
@@ -245,7 +245,7 @@ width: 200px;
   display: flex;
   position: relative;
   left:527px;
-  color: #fff;
+  color: #fff !important;
 }
 .stat-heading img{
   width: 100px !important;
