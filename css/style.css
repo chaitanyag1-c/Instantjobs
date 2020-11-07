@@ -223,7 +223,7 @@ h3 {
   width: 100%;
   
   background: linear-gradient(-30deg,whitesmoke 0%,white 50%,rebeccapurple 50%,hotpink 100%);
-  color: black !important;
+  color: black;
   
 }
 .pehla{
