@@ -223,12 +223,16 @@ h3 {
   width: 100%;
   background: linear-gradient(-30deg,#03a9f4 0%,#3a78b7 50%,#262626 50%,#607d8b 100%);
   background: linear-gradient(-30deg,whitesmoke 0%,white 50%,rebeccapurple 50%,hotpink 100%);
-  color: white;
+  color: black;
   
+}
+.pehla{
+  color:white !important;
 }
 #stats h1 {
   font-size: 3.4rem;
   font-family: monospace;
+  
 }
 #stats img{
 width: 200px;
@@ -241,7 +245,7 @@ width: 200px;
   display: flex;
   position: relative;
   left:527px;
-  
+  color: #fff;
 }
 .stat-heading img{
   width: 100px !important;
