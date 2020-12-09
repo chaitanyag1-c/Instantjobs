@@ -9,7 +9,7 @@ body {
   font-family: "Ubuntu", sans-serif;
   box-sizing: border-box;
   overflow-x: hidden;
-  scroll-behavior:smooth;
+  scroll-behavior: smooth;
 }
 ::-webkit-scrollbar {
   width: 12px;
@@ -409,4 +409,74 @@ margin-top: 4px;
   
 .waiting-download  :hover{
   transform: scale(1.1);
+}
+.footers{
+  background:#113248;
+   overflow:hidden;
+  height: 210px;
+  margin-top: -15px;;
+}
+.footers ul{
+list-style: none;
+}
+.ul-social{
+  width: 600px;
+  height: 60px;
+  display: flex;
+  /* background: brown; */
+  justify-content: center;
+  margin-left: 300px;
+  align-items: center;
+}
+
+.contact-info{
+  width: 400px;
+  height: 60px;
+  display: flex;
+  /* flex-direction: column; */
+  /* background: brown; */
+  justify-content: space-between;
+  font-size: 20px;
+  
+  align-items: center;
+}
+.contact-info a{
+  text-decoration: none;
+  transition: all 0.2s ease-in;
+
+  color: white;
+}
+.contact-info a:hover{
+  color:pink;
+}
+.social-icons img{
+  width:25%;
+  margin-top: 37px;
+  transition:all .1s ease-in;
+}
+.social-icons img:hover{
+transform: translateY(-8px);
+}
+
+
+.credits{
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.developer-name{
+  margin-left: 800px;
+  width:448px;
+}
+.credits h5{
+font-size:13px !important;
+}
+#dev-name{
+  color:pink;
+  
+}
+
+.developer-name a{
+  text-decoration: none;
+  color: white;
 }
