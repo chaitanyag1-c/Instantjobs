@@ -30,14 +30,14 @@
 </head>
 
 <body>
-    <!-- <div class="loader">
+    <div class="loader">
         <h1>Instant Jobs</h1>
         <h2 class="textload">Loading..</h2>
 
         <div class="testload">
 
         </div>
-    </div> -->
+    </div>
 
     <div class="first">
         <header>
@@ -76,13 +76,15 @@
 
         <div id="second">
 
-            <div class="sec-img" data-aos="zoom-in">
-                <img src="section2.jpg" alt="Download now">
+            <div class="sec-img" >
+                <img src="section2.jpg" alt="Download now" data-aos="fade-in">
             </div>
-            <div class="icons">
-                <img src="location.png" alt="" data-aos="fade-down" data-aos-offset="200" data-aos-delay="50"
-                    data-aos-duration="1000">
-                <img src="notifications.png" class="not" alt="" data-aos="fade-down">
+            <div class="icons" data-aos="fade-down">
+                <img src="location.png" alt="">
+
+                
+
+                <img src="notifications.png" class="not"  alt="">
             </div>
 
             <div class="second-element" data-aos="slide-left">
@@ -149,7 +151,7 @@
             i.e a Job. <br> Head over to the App Store and download your Instant Jobs App today.
         </p>
 
-        <a href="https://play.google.com/store/apps/details?id=com.job.instantjobs&hl=en_IN" class="waiting-download center-text"><img src="google-play.png" alt=""></a>
+        <a href="https://play.google.com/store/apps/details?id=com.job.instantjobs&hl=en_IN" data-aos="zoom-in" class="waiting-download center-text"><img src="google-play.png" alt=""></a>
 
     </section>
 
@@ -187,14 +189,28 @@
 
 <script>
 
+// $(document).ready(function() {
+// //Preloader
+// preloaderFadeOutTime = 8500;
+// function hidePreloader() {
+// var preloader = $('.loader');
+// preloader.fadeOut(preloaderFadeOutTime);
+// }
+// hidePreloader();
+// });
+
     //Animate on scroll
     AOS.init({
 
         offset: 200,
         duration: 800,
-        delay: 300,
+        delay: 100,
+        mirror:true,
+        // anchorPlacement: 'top-bottom', 
+
 
     });
+
     //Animation of number Count
     $('.count-number').each(function () {
         $(this).prop('Counter', 0).animate({
@@ -222,6 +238,11 @@
     }
     
 
+    
+
 </script>
+
+
+
 
 </html>
