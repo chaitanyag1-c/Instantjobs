@@ -13,19 +13,23 @@
     <title>Best Jobs in Indore | Instant Job | Job Search App | Indore Jobs 
     </title>
 
-    <script src="jquery.countup.js"></script>
-    <script src="jquery.countup.min.js"></script>
-    <script src="gulpfile.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/style.css">
-<link rel="icon" type="image/png" href="titlelogo.png">
+    <link rel="icon" type="image/png" href="titlelogo.png">
+    <link rel="stylesheet" href="./css/mobile.css" media="screen and (max-width:1170px)">
+<script src="jquery.countup.js"></script>
+    <script src="jquery.countup.min.js"></script>
+    <script src="gulpfile.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
+    <!-- <link rel="stylesheet" href="mobile.css" media="screen and (max-width:375px)"> -->
+    
 
 </head>
 
@@ -41,6 +45,19 @@
 
     <div class="first">
         <header>
+
+<div class="ham-button"  onclick="hamShow()" > &#9776; </div>
+
+<div class="hamburger hamburger-hide">
+    <ul>
+        <li><a href="#"> Home</a></li>
+        <li><a href="#second"> About us</a> </li>
+        <li><a href="#social1"> Contact</a></li>
+    </ul>
+    
+    <div onclick="hamHide()" > &#9776; </div>
+
+</div>
 
             <div class="header1" id="nava">
 
@@ -186,12 +203,11 @@
         </section>
     </footer>
 </body>
-
 <script>
 
 $(document).ready(function() {
 //Preloader
-preloaderFadeOutTime = 8500;
+preloaderFadeOutTime = 3500;
 function hidePreloader() {
 var preloader = $('.loader');
 preloader.fadeOut(preloaderFadeOutTime);
@@ -205,8 +221,9 @@ hidePreloader();
         offset: 200,
         duration: 800,
         delay: 100,
-        mirror:true,
-        // anchorPlacement: 'top-bottom', 
+        // mirror:true,
+        // once:true,
+        // anchorPlacement: 'bottom-top', 
 
 
     });
@@ -241,7 +258,7 @@ hidePreloader();
     
 
 </script>
-
+    <script src="./hamburger.js"></script>
 
 
 

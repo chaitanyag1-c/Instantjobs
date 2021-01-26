@@ -1,7 +1,12 @@
+:root{
+  --primary:'red';
+}
 .center-text{
   text-align: center;
 }
-
+.hamburger,.ham-button{
+  display: none;
+}
 body {
   padding: 0px;
   margin: 0px;
@@ -491,5 +496,10 @@ font-size:13px !important;
 
 .developer-name a{
   text-decoration: none;
-  color: white;
+  color:white;
 }
+
+
+
+
+
