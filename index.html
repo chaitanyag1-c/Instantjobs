@@ -205,29 +205,57 @@
 </body>
 <script>
 
+// $(document).ready(function() {
+// //Preloader
+// preloaderFadeOutTime = 3500;
+// function hidePreloader() {
+// var preloader = $('.loader');
+// preloader.fadeOut(preloaderFadeOutTime);
+// }
+
+
+// hidePreloader();
+// },AOS.init({
+
+// offset: 200,
+// duration: 800,
+// delay: 100,
+// // mirror:true,
+// // once:true,
+// // anchorPlacement: 'bottom-top', 
+
+
+// },
+
+// )
+
+
+// );
+
 $(document).ready(function() {
 //Preloader
 preloaderFadeOutTime = 3500;
 function hidePreloader() {
 var preloader = $('.loader');
-preloader.fadeOut(preloaderFadeOutTime);
+    preloader.fadeOut(preloaderFadeOutTime, function(){
+         AOS.init({
+
+            offset: 200,
+            duration: 800,
+            delay: 100,
+            // mirror:true,
+            // once:true,
+            // anchorPlacement: 'bottom-top', 
+
+        });
+    });
 }
 hidePreloader();
+window.trigger('resize')
 });
 
     //Animate on scroll
-    AOS.init({
-
-        offset: 200,
-        duration: 800,
-        delay: 100,
-        // mirror:true,
-        // once:true,
-        // anchorPlacement: 'bottom-top', 
-
-
-    });
-
+    
     //Animation of number Count
     $('.count-number').each(function () {
         $(this).prop('Counter', 0).animate({
